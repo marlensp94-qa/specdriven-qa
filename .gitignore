@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Reports
+reports/
+logs/
+
+# IDE
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
+
+# Android
+*.apk
+
+# Pytest
+.pytest_cache/
+
+# Appium
+appium.log
