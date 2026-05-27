@@ -60,3 +60,5 @@ temp/
 
 # Local execution artifacts
 *.log
+
+.kiro/
