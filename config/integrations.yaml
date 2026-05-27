@@ -1,0 +1,56 @@
+# =============================================================================
+# Integrations Configuration — Jira & Zephyr Scale (DISABLED)
+# =============================================================================
+# This file contains placeholder configuration for Jira and Zephyr Scale
+# integration. All values are placeholders — the integration modules log
+# intended behavior but do NOT make real API calls.
+#
+# To enable real integration:
+# 1. Replace placeholder values with your actual credentials
+# 2. Uncomment the function bodies in framework/integrations/jira_connector.py
+# 3. Uncomment the function bodies in framework/integrations/zephyr_reporter.py
+#
+# Environment variable overrides:
+#   DEMO_QA_JIRA_BASE_URL, DEMO_QA_JIRA_API_TOKEN, etc.
+# =============================================================================
+
+jira:
+  # Jira instance base URL
+  # Format: https://your-instance.atlassian.net or https://jira.yourcompany.com
+  base_url: "https://your-jira-instance.atlassian.net"
+
+  # Jira project key (e.g., "SWAG", "QA", "DEMO")
+  project_key: "DEMO"
+
+  # API token for authentication
+  # Generate at: https://id.atlassian.com/manage-profile/security/api-tokens
+  # Or for on-premise: Personal Access Token from Jira profile
+  api_token: "your-jira-api-token-here"
+
+  # Jira username (email) associated with the API token
+  username: "your.email@company.com"
+
+zephyr:
+  # Zephyr Scale test cycle key for reporting results
+  # Format: PROJECT-C{number} (e.g., "DEMO-C42")
+  test_cycle_key: "DEMO-C1"
+
+  # Zephyr Scale API token (may be same as Jira token or separate)
+  # For Zephyr Scale Cloud: generated in Zephyr Scale settings
+  # For Zephyr Scale Server: uses Jira API token
+  api_token: "your-zephyr-api-token-here"
+
+  # Test plan key for organizing cycles
+  # Format: PROJECT-P{number} (e.g., "DEMO-P1")
+  test_plan_key: "DEMO-P1"
+
+  # Folder path for test cases in Zephyr
+  test_folder: "/Automated/Demo_QA/"
+
+# =============================================================================
+# Integration Status
+# =============================================================================
+# enabled: false  — Set to true when credentials are configured
+# This flag is checked by the framework before attempting any API calls.
+# =============================================================================
+enabled: false

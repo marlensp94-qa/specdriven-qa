@@ -1,0 +1,11 @@
+# =============================================================================
+# Development Dependencies — Demo_QA
+# =============================================================================
+# Install with: pip install -r requirements-dev.txt
+# These are NOT required for running tests, only for development tooling.
+# =============================================================================
+
+ruff==0.4.4
+mypy==1.10.0
+pre-commit==3.7.1
+pytest-cov==5.0.0

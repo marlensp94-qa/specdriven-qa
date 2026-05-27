@@ -1,0 +1,24 @@
+# =============================================================================
+# App Configuration — Swag Labs Mobile (Android)
+# =============================================================================
+# This file defines the target application under test.
+# All values can be overridden via environment variables using the format:
+#   DEMO_QA_APP_<KEY> (e.g., DEMO_QA_APP_PACKAGE_NAME)
+# =============================================================================
+
+app:
+  # Path to the APK file relative to project root
+  # Download from: https://github.com/saucelabs/my-demo-app-android/releases
+  apk_path: "apps/mda-2.2.0-25.apk"
+
+  # Android package name (unique app identifier)
+  package_name: "com.saucelabs.mydemoapp.android"
+
+  # Main activity to launch
+  activity_name: "com.saucelabs.mydemoapp.android.view.activities.SplashActivity"
+
+  # App version under test (for reporting purposes)
+  app_version: "2.2.0"
+
+  # App display name (used in reports and documentation)
+  app_name: "Swag Labs Mobile"

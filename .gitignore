@@ -1,24 +1,62 @@
 # Python
 __pycache__/
-*.pyc
-.venv/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
 
-# Reports
-reports/
-logs/
+# Virtual environment
+venv/
+.venv/
+env/
 
 # IDE
 .idea/
 .vscode/
-
-# macOS
+*.swp
+*.swo
 .DS_Store
 
-# Android
+# Generated reports and logs (do not commit)
+reports/generated/
+logs/generated/
+
+# App binaries
 *.apk
+*.ipa
 
-# Pytest
+# Environment and secrets
+.env
+.env.local
+config/local_*.yaml
+
+# pytest cache
 .pytest_cache/
+.hypothesis/
 
-# Appium
-appium.log
+# Coverage
+htmlcov/
+.coverage
+coverage.xml
+
+# macOS
+.AppleDouble
+.LSOverride
+
+# Python tooling
+.mypy_cache/
+.ruff_cache/
+
+# Test outputs
+allure-results/
+allure-report/
+
+# Temporary files
+tmp/
+temp/
+
+# Local execution artifacts
+*.log

@@ -1,0 +1,34 @@
+# =============================================================================
+# Emulator Configuration — Android Virtual Devices
+# =============================================================================
+# This file defines the Android emulator(s) used for test execution.
+# All values can be overridden via environment variables using the format:
+#   DEMO_QA_EMULATOR_<KEY> (e.g., DEMO_QA_EMULATOR_PLATFORM_VERSION)
+# =============================================================================
+
+emulator:
+  # AVD (Android Virtual Device) name as configured in Android Studio
+  # To list available AVDs: emulator -list-avds
+  name: "Pixel_6_API_31"
+
+  # Android platform version running on the emulator
+  # Minimum supported: 10.0 (API 29)
+  platform_version: "12.0"
+
+  # Appium server URL
+  # Default: http://localhost:4723 (standard Appium port)
+  appium_url: "http://localhost:4723"
+
+  # Appium server port (must match the port Appium is running on)
+  # Valid range: 1024-65535
+  port: 4723
+
+  # Automation engine (do not change unless migrating to a different driver)
+  automation_name: "UiAutomator2"
+
+  # Device screen size (informational, used in reports)
+  device_profile: "Pixel 6"
+
+  # System image type used when creating the AVD
+  # Options: "Google APIs", "Google Play", "default"
+  system_image: "Google APIs"
