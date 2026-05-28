@@ -21,8 +21,8 @@ env/
 .DS_Store
 
 # Generated reports and logs (do not commit)
-reports/generated/
-logs/generated/
+reports/
+logs/
 
 # App binaries
 *.apk
@@ -45,20 +45,4 @@ coverage.xml
 # macOS
 .AppleDouble
 .LSOverride
-
-# Python tooling
-.mypy_cache/
-.ruff_cache/
-
-# Test outputs
-allure-results/
-allure-report/
-
-# Temporary files
-tmp/
-temp/
-
-# Local execution artifacts
 *.log
-
-.kiro/
