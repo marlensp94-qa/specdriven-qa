@@ -1,1 +1,0 @@
-# Placeholder for Appium desired capabilities configuration.

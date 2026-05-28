@@ -1,2 +1,0 @@
-class LoginLocators:
-    pass
